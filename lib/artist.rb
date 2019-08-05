@@ -8,7 +8,11 @@ class Artist
   end
 
   def add_song(song)
+<<<<<<< HEAD
    self.songs << song
+=======
+   self.songs << @songs
+>>>>>>> f3dd75dfda8ce7e1cae00fe0fd4e8f0387cd21fb
   end
   
   def save
@@ -37,10 +41,16 @@ class Artist
     artist
   end
   
+<<<<<<< HEAD
   def print_songs 
 		@songs.each do |song|
 			puts song.name
 		end 
   end
 
+=======
+   def print_songs
+    self.songs.each {|song| song.name}
+  end
+>>>>>>> f3dd75dfda8ce7e1cae00fe0fd4e8f0387cd21fb
 end
